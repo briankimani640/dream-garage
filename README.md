@@ -24,20 +24,27 @@ To run this project locally, follow these steps:
    git clone https://github.com/briankimani640/dream-garage.git
    cd dream-garage
   
-2. **Create and activate a virtual environment:**  
-   python -m venv venv
-source venv/bin/activate  # On Windows use: venv\Scripts\activate
+2. **Create and activate a virtual environment:** 
+  ```bash
+  python -m venv venv
+  source venv/bin/activate  # On Windows use: venv\Scripts\activate
 
 3. **  Install the required dependencies: **
-pip install django pillow
+  ```bash
+  pip install django pillow
+
+
 
 4. ** Apply database migrations: **
-python manage.py makemigrations
-python manage.py migrate
+  ```bash
+ python manage.py makemigrations
+ python manage.py migrate
 
 5. ** Run the development server: **
-python manage.py runserver
+  ```bash
+ python manage.py runserver
 
 6. ** viewing the page **
-Open http://127.0.0.1:8000/ in your browser to view the application 
+  ```bash
+ Open http://127.0.0.1:8000/ in your browser to view the application 
 

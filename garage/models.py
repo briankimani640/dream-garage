@@ -14,6 +14,7 @@ class Vehicle(models.Model):
     engine_specs = models.CharField(max_length=150, help_text="e.g., 2.5L Turbocharged Boxer, 998cc Supercharged Inline-4")
     horsepower = models.IntegerField(null=True, blank=True)
     description = models.TextField(blank=True, help_text="Any extra notes or modifications.")
+    image = models.ImageField(upload_to='vehicles/', null=True, blank=True)
     added_on = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):

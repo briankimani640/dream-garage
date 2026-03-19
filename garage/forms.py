@@ -4,7 +4,7 @@ from .models import Vehicle
 class VehicleForm(forms.ModelForm):
     class Meta:
         model = Vehicle
-        fields = ['make', 'model_name', 'vehicle_type', 'year', 'engine_specs', 'horsepower', 'description']
+        fields = ['make', 'model_name', 'vehicle_type', 'year', 'engine_specs', 'horsepower', 'description', 'image']
         
         widgets = {
             'make': forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'e.g., Subaru'}),

@@ -9,6 +9,7 @@
 <body class="bg-light">
     <div class="container mt-5">
         <h1 class="text-center mb-5 fw-bold text-uppercase">My Dream Garage</h1>
+        <div class="text-center mb-4"><a href="{% url 'add_vehicle' %}" class="btn btn-success">+ Add a Vehicle</a></div>
         
         <div class="row">
             {% for vehicle in vehicles %}

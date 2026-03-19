@@ -1,21 +1,21 @@
-# Dream Garage 🏎️🏍️
+# Dream Garage 
 
 A full-stack web application built to catalog and manage a collection of high-performance vehicles. This project demonstrates core database operations, media handling, and dynamic user interfaces using the Django framework.
 
-## 🚀 Features
+##  Features
 * **Full CRUD Operations:** Create, Read, Update, and Delete vehicles directly from the frontend interface.
 * **Media Management:** Securely upload and serve custom vehicle images.
 * **Dynamic Search:** Query the SQLite database by make, model, or engine specifications.
 * **Pagination:** Clean, scalable UI that limits the number of vehicles displayed per page.
 * **Responsive Design:** Styled with Bootstrap 5 for a seamless mobile and desktop experience.
 
-## 🛠️ Tech Stack
+##  Tech Stack
 * **Backend:** Python, Django
 * **Database:** SQLite3
 * **Frontend:** HTML5, CSS3, Bootstrap 5
 * **Libraries:** Pillow (Image Processing)
 
-## 💻 Local Setup & Installation
+##  Local Setup & Installation
 
 To run this project locally, follow these steps:
 

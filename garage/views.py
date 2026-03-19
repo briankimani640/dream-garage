@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect, get_object_or_404
 from django.core.paginator import Paginator
 from django.db.models import Q
+from django.contrib.auth.decorators import login_required
 from .models import Vehicle
 from .forms import VehicleForm
 
@@ -24,6 +25,7 @@ def vehicle_list(request):
     context = {'page_obj': page_obj, 'search_query': search_query}
     return render(request, 'garage/vehicle_list.html', context)
 
+@login_required
 def add_vehicle(request):
     if request.method == 'POST':
         # request.FILES is required to grab the uploaded image
@@ -37,6 +39,8 @@ def add_vehicle(request):
     context = {'form': form}
     return render(request, 'garage/add_vehicle.html', context)
 
+
+@login_required
 def edit_vehicle(request, pk):
     vehicle = get_object_or_404(Vehicle, pk=pk)
     if request.method == "POST":
@@ -50,6 +54,7 @@ def edit_vehicle(request, pk):
         
     return render(request, 'garage/add_vehicle.html', {'form': form, 'edit_mode': True})
 
+@login_required
 def delete_vehicle(request, pk):
     vehicle = get_object_or_404(Vehicle, pk=pk)
     if request.method == "POST":
